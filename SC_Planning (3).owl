@@ -1,0 +1,840 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3id.org/ecsel-dr-SCP"
+     xml:base="http://www.w3id.org/ecsel-dr-SCP"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.w3id.org/ecsel-dr-SCP">
+        <dc:description xml:lang="en">undefined</dc:description>
+        <dc:title xml:lang="en">undefined</dc:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#calculate -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#calculate">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#SupplyDemandMatch"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#SupplyPicture"/>
+        <rdfs:label xml:lang="iri-based">calculate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#calculateBased -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#calculateBased">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OrdersReschedule"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#SupplyPicture"/>
+        <rdfs:label xml:lang="iri-based">calculateBased</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#calculateBasedOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#calculateBasedOn">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#MarketingDemands"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#SalesDemands"/>
+        <rdfs:label xml:lang="iri-based">calculateBasedOn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#consistOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#consistOf">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OrderLineItem"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OpenOrderBook"/>
+        <rdfs:label xml:lang="iri-based">consistOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#constitute -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#constitute">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Orders"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#SalesDemands"/>
+        <rdfs:label xml:lang="iri-based">constitute</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#consume -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#consume">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OrderLineItem"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#ATP"/>
+        <rdfs:label xml:lang="iri-based">consume</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#contribute -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#contribute">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Orders"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#PrioritizedOrders"/>
+        <rdfs:label xml:lang="iri-based">contribute</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#create -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#create">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#CLM"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#PrioritizedOrders"/>
+        <rdfs:label xml:lang="iri-based">create</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#enterTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#enterTo">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Orders"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#CLM"/>
+        <rdfs:label xml:lang="iri-based">enterTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#figureOutFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#figureOutFrom">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#TargetAllocation"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#AATP"/>
+        <rdfs:label xml:lang="iri-based">figureOutFrom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#generate -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#generate">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OrderLineItem"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OpenOrderBook"/>
+        <rdfs:label xml:lang="iri-based">generate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#goesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#goesTo">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OrderLineItem"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#ordersScheduleLine"/>
+        <rdfs:label xml:lang="iri-based">goesTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#hasInput -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#hasInput">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Stocks"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#SupplyDemandMatch"/>
+        <rdfs:label xml:lang="iri-based">hasInput</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#hasInputin -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#hasInputin">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#PrioritizedOrders"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OperationalDemand"/>
+        <rdfs:label xml:lang="iri-based">hasInputin</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#hasResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#hasResult">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#MarketingDemands"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OperationalDemand"/>
+        <rdfs:label xml:lang="iri-based">hasResult</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#isPartOf">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Forecast"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OperationalDemand"/>
+        <rdfs:label xml:lang="iri-based">isPartOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#isPlaceOrders -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#isPlaceOrders">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Customers"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Orders"/>
+        <rdfs:label xml:lang="iri-based">isPlaceOrders</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#isResultOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#isResultOf">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#nEWs"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OrdersReschedule"/>
+        <rdfs:label xml:lang="iri-based">isResultOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#isTransferTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#isTransferTo">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OrderLineItem"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#ordersScheduleLine"/>
+        <rdfs:label xml:lang="iri-based">isTransferTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#match -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#match">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#CapacityBottleneck"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#SupplyDemandMatch"/>
+        <rdfs:label xml:lang="iri-based">match</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#matchIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#matchIn">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#PrioritizedDemand"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#SupplyDemandMatch"/>
+        <rdfs:label xml:lang="iri-based">matchIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#matchTO -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#matchTO">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#AggregatedCapacity"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#MarketingDemands"/>
+        <rdfs:label xml:lang="iri-based">matchTO</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#obtainFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#obtainFrom">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Forecast"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#SalesDemands"/>
+        <rdfs:label xml:lang="iri-based">obtainFrom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#provide -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#provide">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#CLM"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Promise"/>
+        <rdfs:label xml:lang="iri-based">provide</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#resultIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#resultIn">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OpenOrderBook"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OrdersReschedule"/>
+        <rdfs:label xml:lang="iri-based">resultIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#resultTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#resultTo">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#BottleneckResource"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#CapacityBottleneck"/>
+        <rdfs:label xml:lang="iri-based">resultTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#sendTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#sendTo">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#nEWs"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#CLM"/>
+        <rdfs:label xml:lang="iri-based">sendTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#sortTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#sortTo">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Orders"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OrderLineItem"/>
+        <rdfs:label xml:lang="iri-based">sortTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#transfer -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#transfer">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Promise"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Confirmation"/>
+        <rdfs:label xml:lang="iri-based">transfer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#transferTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#transferTo">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OperationalDemand"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#PrioritizedDemand"/>
+        <rdfs:label xml:lang="iri-based">transferTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#use -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#use">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#CLM"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OrderLineItem"/>
+        <rdfs:label xml:lang="iri-based">use</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#useIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#useIn">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#BottleneckResource"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#ResourceCapacity"/>
+        <rdfs:label xml:lang="iri-based">useIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#useUp -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#useUp">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OrderLineItem"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-SCP#AATP"/>
+        <rdfs:label xml:lang="iri-based">useUp</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#ConfirmedDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#ConfirmedDate">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OpenOrderBook"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="iri-based">ConfirmedDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#ConfirmedQuantity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#ConfirmedQuantity">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OpenOrderBook"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="iri-based">ConfirmedQuantity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#CustomerLocation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#CustomerLocation">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Customers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="iri-based">CustomerLocation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#CustomersID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#CustomersID">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Customers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="iri-based">CustomersID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#Granularity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/ecsel-dr-SCP#Granularity">
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Customers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="iri-based">Granularity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#AATP -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#AATP">
+        <rdfs:label xml:lang="iri-based">AATP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#AP_FCST -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#AP_FCST">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Forecast"/>
+        <rdfs:label xml:lang="iri-based">AP_FCST</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#ATP -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#ATP">
+        <rdfs:label xml:lang="iri-based">ATP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#AggregatedCapacity -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#AggregatedCapacity">
+        <rdfs:label xml:lang="iri-based">AggregatedCapacity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#BottleneckResource -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#BottleneckResource">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#ResourceCapacity"/>
+        <rdfs:label xml:lang="iri-based">BottleneckResource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#BufferStockOrders -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#BufferStockOrders">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Orders"/>
+        <rdfs:label xml:lang="iri-based">BufferStockOrders</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#CLM -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#CLM">
+        <rdfs:label xml:lang="iri-based">CLM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#CapacityBottleneck -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#CapacityBottleneck">
+        <rdfs:label xml:lang="iri-based">CapacityBottleneck</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#Confirmation -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#Confirmation">
+        <rdfs:label xml:lang="iri-based">Confirmation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#ConsignmentOrders -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#ConsignmentOrders">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Orders"/>
+        <rdfs:label xml:lang="iri-based">ConsignmentOrders</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#Customers -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#Customers">
+        <rdfs:label xml:lang="iri-based">Customers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#DB -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#DB">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Stocks"/>
+        <rdfs:label xml:lang="iri-based">DB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#DC -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#DC">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Stocks"/>
+        <rdfs:label xml:lang="iri-based">DC</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#EDIForecast -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#EDIForecast">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Orders"/>
+        <rdfs:label xml:lang="iri-based">EDIForecast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#Forecast -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#Forecast">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OperationalDemand"/>
+        <rdfs:label xml:lang="iri-based">Forecast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#GeneralCustomers -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#GeneralCustomers">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Customers"/>
+        <rdfs:label xml:lang="iri-based">GeneralCustomers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#HP_Forecast -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#HP_Forecast">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Forecast"/>
+        <rdfs:label xml:lang="iri-based">HP_Forecast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#MarketingDemands -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#MarketingDemands">
+        <rdfs:label xml:lang="iri-based">MarketingDemands</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#MaxStock -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#MaxStock">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#SSO_Stocks"/>
+        <rdfs:label xml:lang="iri-based">MaxStock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#MinStock -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#MinStock">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#SSO_Stocks"/>
+        <rdfs:label xml:lang="iri-based">MinStock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#NP_Forecast -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#NP_Forecast">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Forecast"/>
+        <rdfs:label xml:lang="iri-based">NP_Forecast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#OP_Forecast -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#OP_Forecast">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Forecast"/>
+        <rdfs:label xml:lang="iri-based">OP_Forecast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#OpenOrderBook -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#OpenOrderBook">
+        <rdfs:label xml:lang="iri-based">OpenOrderBook</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#OperationalDemand -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#OperationalDemand">
+        <rdfs:label xml:lang="iri-based">OperationalDemand</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#OrderLineItem -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#OrderLineItem">
+        <rdfs:label xml:lang="iri-based">OrderLineItem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#Orders -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#Orders">
+        <rdfs:label xml:lang="iri-based">Orders</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#OrdersReschedule -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#OrdersReschedule">
+        <rdfs:label xml:lang="iri-based">OrdersReschedule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#PrioritizedDemand -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#PrioritizedDemand">
+        <rdfs:label xml:lang="iri-based">PrioritizedDemand</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#PrioritizedOrders -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#PrioritizedOrders">
+        <rdfs:label xml:lang="iri-based">PrioritizedOrders</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#PrivateCustomers -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#PrivateCustomers">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Customers"/>
+        <rdfs:label xml:lang="iri-based">PrivateCustomers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#Promise -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#Promise">
+        <rdfs:label xml:lang="iri-based">Promise</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#RampUpStock -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#RampUpStock">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#SSO_Stocks"/>
+        <rdfs:label xml:lang="iri-based">RampUpStock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#ResourceCapacity -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#ResourceCapacity">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#AggregatedCapacity"/>
+        <rdfs:label xml:lang="iri-based">ResourceCapacity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#RetainedStock -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#RetainedStock">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#SSO_Stocks"/>
+        <rdfs:label xml:lang="iri-based">RetainedStock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#SSO_Stocks -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#SSO_Stocks">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#OperationalDemand"/>
+        <rdfs:label xml:lang="iri-based">SSO_Stocks</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#SafetyStock -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#SafetyStock">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#SSO_Stocks"/>
+        <rdfs:label xml:lang="iri-based">SafetyStock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#SalesDemands -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#SalesDemands">
+        <rdfs:label xml:lang="iri-based">SalesDemands</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#StandardOrders -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#StandardOrders">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Orders"/>
+        <rdfs:label xml:lang="iri-based">StandardOrders</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#Stocks -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#Stocks">
+        <rdfs:label xml:lang="iri-based">Stocks</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#SupplyDemandMatch -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#SupplyDemandMatch">
+        <rdfs:label xml:lang="iri-based">SupplyDemandMatch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#SupplyPicture -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#SupplyPicture">
+        <rdfs:label xml:lang="iri-based">SupplyPicture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#TargetAllocation -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#TargetAllocation">
+        <rdfs:label xml:lang="iri-based">TargetAllocation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#WIP -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#WIP">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-SCP#Stocks"/>
+        <rdfs:label xml:lang="iri-based">WIP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#nEWs -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#nEWs">
+        <rdfs:label xml:lang="iri-based">nEWs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-SCP#ordersScheduleLine -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-SCP#ordersScheduleLine">
+        <rdfs:label xml:lang="iri-based">ordersScheduleLine</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
